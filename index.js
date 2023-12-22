@@ -43,27 +43,50 @@ function opposite(number) {
 console.log(opposite(number));
 
 // 6-masala
-let num = 123
+let num = 123;
 function numb(num) {
   return num.toString();
 }
-console.log(numb(typeof 'num'));
+console.log(numb(typeof "num"));
 
 // 7-masala
 
+function boolToWord(bool) {
+  return bool ? "Yes" : "No";
+}
 
+console.log(boolToWord());
 
+// 8-masala
 
+let str = "world";
 
+function solution(str) {
+  return str.split("").reverse().join("");
+}
+console.log(solution(str));
 
+// 9 - masala
 
+let str1 = "1, 2, 3, 4, 5";
 
+function removeChar(str1) {
+  return str1.substring(1, str1.length - 1);
+}
+console.log(removeChar(str1));
 
+// 10-masala
 
+let numbers= [1,2,3,4]
 
-
-
-
+function squareSum(numbers){
+  var result = 0;
+  for (var i = 0; i < numbers.length; i++) {
+    result += numbers[i] **2;
+  }
+  return result;
+}
+console.log(squareSum(numbers));
 //   -Masala
 
 // const points=games=>games.reduce((output,current)=>{
