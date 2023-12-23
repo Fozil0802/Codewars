@@ -98,7 +98,6 @@ console.log(squareSum(numbers));
 
 // ?????????????????????????
 
-
 // 12-masala
 
 const findsum = (n) => {
@@ -110,6 +109,22 @@ const findsum = (n) => {
 };
 console.log(findsum(8));
 
+// 13- masala
+let text = "fo zi  l shav kato  vich";
+
+function noSpace() {
+  return text.replace(/\s/g, "");
+}
+
+console.log(noSpace(text));
+
+// 14-masala
+
+function finder(){
+  let args = [5, 3, 7, 27, 9];
+  return Math.min(...args)
+}
+console.log(finder());             
 
 
 
