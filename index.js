@@ -77,16 +77,50 @@ console.log(removeChar(str1));
 
 // 10-masala
 
-let numbers= [1,2,3,4]
+let numbers = [1, 2, 3, 4];
 
-function squareSum(numbers){
+function squareSum(numbers) {
   var result = 0;
   for (var i = 0; i < numbers.length; i++) {
-    result += numbers[i] **2;
+    result += numbers[i] ** 2;
   }
   return result;
 }
 console.log(squareSum(numbers));
+
+// 11-masala ????????????????????????
+
+// let repeat1 = "f";
+// function repeatStr (n, s) {
+//   return s.repeat(n);
+// }
+// console.log(repeatStr(repeat1));
+
+// ?????????????????????????
+
+
+// 12-masala
+
+const findsum = (n) => {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
+};
+console.log(findsum(8));
+
+
+
+
+
+
+
+
+
+
+
+
 //   -Masala
 
 // const points=games=>games.reduce((output,current)=>{
