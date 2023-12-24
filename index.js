@@ -25,7 +25,6 @@ function makeNegative(number) {
   // Agar raqam salbiy bo'lmasa, salbiy qilinganini qaytaradi
   // return number < 0 ? number : -number;
   return -Math.abs(number);
-
 }
 
 // Test qilish
@@ -121,26 +120,24 @@ console.log(noSpace(text));
 
 // 14-masala
 
-function finder(){
+function finder() {
   let args = [5, 3, 7, 27, 9];
-  return Math.min(...args)
+  return Math.min(...args);
 }
-console.log(finder());             
+console.log(finder());
 
 // 15-masala
 
 function countSheeps(arrayOfSheep) {
- 
-    var sheepCounter = 0;
-    
-    for( var i = 0; i < arrayOfSheep.length; i++) {
-    
-      if(arrayOfSheep[i]=== true) {
-        sheepCounter++;
-      }
+  var sheepCounter = 0;
+
+  for (var i = 0; i < arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i] === true) {
+      sheepCounter++;
     }
-    
-    return sheepCounter;
+  }
+
+  return sheepCounter;
 }
 console.log(countSheeps());
 // 2-usul
@@ -151,11 +148,36 @@ console.log(countSheeps());
 
 // 16-masala
 
+// Examples(Operator, value1, value2) --> output
+// ('+', 4, 7) --> 11
+// ('-', 15, 18) --> -3
+// ('*', 5, 5) --> 25
+// ('/', 49, 7) --> 7
 
+function basicOp(operation, value1, value2) {
+  // Code
+  let result = 0;
+  switch (operation) {
+    case "+":
+      result = value1 + value2;
+      break;
+    case "-":
+      result = value1 - value2;
+      break;
+    case "*":
+      result = value1 * value2;
+      break;
+    case "/":
+      result = value1 / value2;
+      break;
+    default:
+      return "not a valid operator";
+      break;
+  }
+  return result;
+}
 
-
-
-
+console.log(basicOp());
 
 //   -Masala
 
