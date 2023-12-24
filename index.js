@@ -13,12 +13,28 @@ multiply = function (a, b) {
 };
 
 // 3-masala
-
+// 1-usul
 function positiveSum(arr) {
   // return arr.reduce((a, b) => a + (b > 0 ? b : 0));
 }
 
 console.log(positiveSum());
+
+// 2-usul
+
+// let arr = [1, -4, 7, 12];
+// let newsum = 0;
+// function positiveSum(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       newsum += arr[i];
+//     }
+//   }
+//   return newsum;
+// }
+
+// console.log(positiveSum(arr));
+
 // 4-masala
 
 function makeNegative(number) {
@@ -128,23 +144,23 @@ console.log(finder());
 
 // 15-masala
 
-function countSheeps(arrayOfSheep) {
-  var sheepCounter = 0;
+// function countSheeps(arrayOfSheep) {
+//   var sheepCounter = 0;
 
-  for (var i = 0; i < arrayOfSheep.length; i++) {
-    if (arrayOfSheep[i] === true) {
-      sheepCounter++;
-    }
-  }
+//   for (var i = 0; i < arrayOfSheep.length; i++) {
+//     if (arrayOfSheep[i] === true) {
+//       sheepCounter++;
+//     }
+//   }
 
-  return sheepCounter;
-}
-console.log(countSheeps());
+//   return sheepCounter;
+// }
+// console.log(countSheeps());
 // 2-usul
-function countSheeps(arrayOfSheeps) {
-  return arrayOfSheeps.filter(Boolean).length;
-}
-console.log(countSheeps());
+// function countSheeps(arrayOfSheeps) {
+//   return arrayOfSheeps.filter(Boolean).length;
+// }
+// console.log(countSheeps());
 
 // 16-masala
 
@@ -179,7 +195,29 @@ function basicOp(operation, value1, value2) {
 
 console.log(basicOp());
 
-//   -Masala
+// 17-Masala
+
+
+let year = 2101;
+
+function century(year) {
+  // 1-usul
+//   let centuryCount = 0;
+// while (year > 0){
+//   year = year - 100;
+//   centuryCount = centuryCount + 1;
+// }
+// return centuryCount;
+// 2-usul
+return Math.ceil(year/100);
+}
+console.log(century(year));
+
+
+
+
+
+
 
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
