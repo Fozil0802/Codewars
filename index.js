@@ -25,6 +25,7 @@ function makeNegative(number) {
   // Agar raqam salbiy bo'lmasa, salbiy qilinganini qaytaradi
   // return number < 0 ? number : -number;
   return -Math.abs(number);
+
 }
 
 // Test qilish
@@ -126,9 +127,29 @@ function finder(){
 }
 console.log(finder());             
 
+// 15-masala
 
+function countSheeps(arrayOfSheep) {
+ 
+    var sheepCounter = 0;
+    
+    for( var i = 0; i < arrayOfSheep.length; i++) {
+    
+      if(arrayOfSheep[i]=== true) {
+        sheepCounter++;
+      }
+    }
+    
+    return sheepCounter;
+}
+console.log(countSheeps());
+// 2-usul
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+console.log(countSheeps());
 
-
+// 16-masala
 
 
 
