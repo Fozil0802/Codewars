@@ -213,7 +213,28 @@ return Math.ceil(year/100);
 }
 console.log(century(year));
 
+// 18-maslala
 
+// time 3=> liter= 1
+// time 6.7=> liter= 3
+
+let time = 3
+
+function litres(time) {
+  return Math.floor(time/2)
+  // Math.floor(time*0.5)
+}
+
+console.log(litres(time));
+
+// 19-masala
+
+let n = 12345
+
+function digitize(n) {
+  return n.toString().split('').reverse().map(Number);
+}
+console.log(digitize(n));
 
 
 
