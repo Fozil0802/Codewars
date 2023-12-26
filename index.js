@@ -252,6 +252,27 @@ function isDivisible(n, x, y) {
 }
  console.log(isDivisible(num1));
 
+// 21-masala
+let name = 'Fozil';
+function greet(name){
+  return `Hello, ${name} how are you doing today?`;
+}
+
+console.log(greet(name));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
@@ -277,3 +298,4 @@ function isDivisible(n, x, y) {
 //     });
 //     return total;
 //   }
+
