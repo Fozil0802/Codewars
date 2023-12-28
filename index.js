@@ -15,7 +15,9 @@ multiply = function (a, b) {
 // 3-masala
 // 1-usul
 function positiveSum(arr) {
+
   // return arr.reduce((a, b) => a + (b > 0 ? b : 0));
+
 }
 
 console.log(positiveSum());
@@ -260,11 +262,47 @@ function greet(name){
 
 console.log(greet(name));
 
+// 22-masala
+
+  function greet() {
+    return "hello world!";
+    }
+console.log(greet());
+
+// 23-masala
+// 1-usul
+let arr =["hay", "junk", "hay", "moreJunk", "needle", "randomJunk"]
+
+function findNeedle(haystack) {
+  return "found the needle at position " + haystack.indexOf("needle");
+}
+
+console.log(findNeedle(arr));
+
+// 2-usul
 
 
+function findNeedle(haystack) {
+  // your code here
+  for (i = 0 ; i < haystack.length ; i++){
+    if(haystack[i]==="needle"){
+      return "found the needle at position " + i
+    }
+  }
+}
 
+console.log(findNeedle(arr));
 
+// 24-masala
 
+function lovePetals(flower1, flower2) {
+  if (flower1 % 2 === 0 && flower2 % 2 !== 0 || flower1 % 2 !== 0 && flower2 % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(lovePetals(1,4));
 
 
 
