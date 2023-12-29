@@ -15,9 +15,7 @@ multiply = function (a, b) {
 // 3-masala
 // 1-usul
 function positiveSum(arr) {
-
   // return arr.reduce((a, b) => a + (b > 0 ? b : 0));
-
 }
 
 console.log(positiveSum());
@@ -199,19 +197,18 @@ console.log(basicOp());
 
 // 17-Masala
 
-
 let year = 2101;
 
 function century(year) {
   // 1-usul
-//   let centuryCount = 0;
-// while (year > 0){
-//   year = year - 100;
-//   centuryCount = centuryCount + 1;
-// }
-// return centuryCount;
-// 2-usul
-return Math.ceil(year/100);
+  //   let centuryCount = 0;
+  // while (year > 0){
+  //   year = year - 100;
+  //   centuryCount = centuryCount + 1;
+  // }
+  // return centuryCount;
+  // 2-usul
+  return Math.ceil(year / 100);
 }
 console.log(century(year));
 
@@ -220,10 +217,10 @@ console.log(century(year));
 // time 3=> liter= 1
 // time 6.7=> liter= 3
 
-let time = 3
+let time = 3;
 
 function litres(time) {
-  return Math.floor(time/2)
+  return Math.floor(time / 2);
   // Math.floor(time*0.5)
 }
 
@@ -231,10 +228,10 @@ console.log(litres(time));
 
 // 19-masala
 
-let n = 12345
+let n = 12345;
 
 function digitize(n) {
-  return n.toString().split('').reverse().map(Number);
+  return n.toString().split("").reverse().map(Number);
 }
 console.log(digitize(n));
 
@@ -250,13 +247,13 @@ isDivisible(100,5,3)--> false because 100 is not divisible by 3
 isDivisible(12,7,5)--> false because 12 is neither divisible by 7 nor 5*/
 
 function isDivisible(n, x, y) {
-  return (n%x == 0 && n%y ==0) ? true : false;
+  return n % x == 0 && n % y == 0 ? true : false;
 }
- console.log(isDivisible(num1));
+console.log(isDivisible(num1));
 
 // 21-masala
-let name = 'Fozil';
-function greet(name){
+let name = "Fozil";
+function greet(name) {
   return `Hello, ${name} how are you doing today?`;
 }
 
@@ -264,14 +261,14 @@ console.log(greet(name));
 
 // 22-masala
 
-  function greet() {
-    return "hello world!";
-    }
+function greet() {
+  return "hello world!";
+}
 console.log(greet());
 
 // 23-masala
 // 1-usul
-let arr =["hay", "junk", "hay", "moreJunk", "needle", "randomJunk"]
+let arr = ["hay", "junk", "hay", "moreJunk", "needle", "randomJunk"];
 
 function findNeedle(haystack) {
   return "found the needle at position " + haystack.indexOf("needle");
@@ -281,12 +278,11 @@ console.log(findNeedle(arr));
 
 // 2-usul
 
-
 function findNeedle(haystack) {
   // your code here
-  for (i = 0 ; i < haystack.length ; i++){
-    if(haystack[i]==="needle"){
-      return "found the needle at position " + i
+  for (i = 0; i < haystack.length; i++) {
+    if (haystack[i] === "needle") {
+      return "found the needle at position " + i;
     }
   }
 }
@@ -296,19 +292,35 @@ console.log(findNeedle(arr));
 // 24-masala
 
 function lovePetals(flower1, flower2) {
-  if (flower1 % 2 === 0 && flower2 % 2 !== 0 || flower1 % 2 !== 0 && flower2 % 2 === 0) {
+  if (
+    (flower1 % 2 === 0 && flower2 % 2 !== 0) ||
+    (flower1 % 2 !== 0 && flower2 % 2 === 0)
+  ) {
     return true;
   } else {
     return false;
   }
 }
-console.log(lovePetals(1,4));
+console.log(lovePetals(1, 4));
 
+// 23-masala
 
+let arr1 = [1, 2, 3, 4, 5];
 
+function maps(x) {
+  let newArr = [];
+  for (let i = 0; i < x.length; i++) {
+    newArr.push(x[i] * 2);
+  }
+  return newArr;
+}
 
+// 2-usul
 
-
+function maps(x){
+  return x.map(n => n * 2);
+}
+console.log(maps(arr1));
 
 
 
@@ -336,4 +348,3 @@ console.log(lovePetals(1,4));
 //     });
 //     return total;
 //   }
-
