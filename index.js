@@ -339,6 +339,29 @@ function paperwork(n, m) {
 }
 console.log(paperwork(-5,2));
 
+// 25-masala
+
+function booleanToString(b){
+  
+  //your code here
+    if(b){
+    return "true";
+  }else{
+    return "false";
+  }
+}
+console.log(booleanToString())
+
+
+function booleanToString(b){
+  return b ? 'true' : 'false';
+}
+
+function booleanToString(b){
+  return b.toString();
+}
+
+
 
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
