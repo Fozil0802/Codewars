@@ -353,14 +353,24 @@ function booleanToString(b){
 console.log(booleanToString())
 
 
-function booleanToString(b){
-  return b ? 'true' : 'false';
-}
+// function booleanToString(b){
+//   return b ? 'true' : 'false';
+// }
 
-function booleanToString(b){
-  return b.toString();
-}
+// function booleanToString(b){
+//   return b.toString();
+// }
 
+// 26-masala
+
+function areYouPlayingBanjo(name) {
+  if (name[0] === 'R' || name[0] === 'r') {
+   return `${name} plays banjo`;
+ } else {
+   return `${name} does not play banjo`;
+ }
+}
+console.log(areYouPlayingBanjo());
 
 
 // const points=games=>games.reduce((output,current)=>{
