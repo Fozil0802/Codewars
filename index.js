@@ -317,8 +317,8 @@ function maps(x) {
 
 // 2-usul
 
-function maps(x){
-  return x.map(n => n * 2);
+function maps(x) {
+  return x.map((n) => n * 2);
 }
 console.log(maps(arr1));
 
@@ -326,32 +326,30 @@ console.log(maps(arr1));
 
 // 1-usul
 function paperwork(n, m) {
-  if(n < 0 || m < 0){
-    return 0
+  if (n < 0 || m < 0) {
+    return 0;
   } else {
-    return n*m
+    return n * m;
   }
 }
 
 // 2-usul
 function paperwork(n, m) {
-  return n > 0 && m > 0 ? n * m : 0
+  return n > 0 && m > 0 ? n * m : 0;
 }
-console.log(paperwork(-5,2));
+console.log(paperwork(-5, 2));
 
 // 25-masala
 
-function booleanToString(b){
-  
+function booleanToString(b) {
   //your code here
-    if(b){
+  if (b) {
     return "true";
-  }else{
+  } else {
     return "false";
   }
 }
-console.log(booleanToString())
-
+console.log(booleanToString());
 
 // function booleanToString(b){
 //   return b ? 'true' : 'false';
@@ -378,25 +376,28 @@ h = 0;
 m = 1;
 s = 1;
 // 1-usul
-function past(h, m, s){
-  return ((h*3600)+(m*60)+s)*1000;
+function past(h, m, s) {
+  return (h * 3600 + m * 60 + s) * 1000;
 }
 // /2-usul
-function past(h, m, s){
+function past(h, m, s) {
   //#Happy Coding! ^_^
   let secondsToMillisec = s * 1000;
   let minutesToMillisec = m * 60000;
   let hoursToMillisec = h * 3600000;
-  
+
   return secondsToMillisec + minutesToMillisec + hoursToMillisec;
 }
-console.log(past(h,m,s));
+console.log(past(h, m, s));
 
+// 28=masala
 
+let arr2 = [5,10,15,20,30];
 
-
-
-
+let find_average = (array) => {  
+  return array.length === 0 ? 0 : array.reduce((acc, ind)=> acc + ind, 0)/array.length
+}
+console.log(find_average(arr2));
 
 
 // const points=games=>games.reduce((output,current)=>{
