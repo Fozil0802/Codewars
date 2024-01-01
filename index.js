@@ -392,13 +392,33 @@ console.log(past(h, m, s));
 
 // 28=masala
 
-let arr2 = [5,10,15,20,30];
+let arr2 = [5, 10, 15, 20, 30];
 
-let find_average = (array) => {  
-  return array.length === 0 ? 0 : array.reduce((acc, ind)=> acc + ind, 0)/array.length
-}
+let find_average = (array) => {
+  return array.length === 0
+    ? 0
+    : array.reduce((acc, ind) => acc + ind, 0) / array.length;
+};
 console.log(find_average(arr2));
 
+// 29-masala
+// 1-usul
+
+// function betterThanAverage(classPoints, yourPoints) {
+//   // Your code here
+//   return (
+//     yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length
+//   );
+// }
+
+// 2-usul
+function betterThanAverage(classPoints, yourPoints) {
+  const classPointsSum = classPoints.reduce((a, b) => a + b, 0);
+  const classAverage = classPointsSum / classPoints.length;
+  const isBetter = yourPoints > classAverage;
+  return isBetter;
+}
+console.log(betterThanAverage());
 
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
