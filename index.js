@@ -363,14 +363,40 @@ console.log(booleanToString())
 
 // 26-masala
 
-function areYouPlayingBanjo(name) {
-  if (name[0] === 'R' || name[0] === 'r') {
-   return `${name} plays banjo`;
- } else {
-   return `${name} does not play banjo`;
- }
+// function areYouPlayingBanjo(name) {
+//   if (name[0] === 'R' || name[0] === 'r') {
+//    return `${name} plays banjo`;
+//  } else {
+//    return `${name} does not play banjo`;
+//  }
+// }
+// console.log(areYouPlayingBanjo());
+
+// 27-masala
+
+h = 0;
+m = 1;
+s = 1;
+// 1-usul
+function past(h, m, s){
+  return ((h*3600)+(m*60)+s)*1000;
 }
-console.log(areYouPlayingBanjo());
+// /2-usul
+function past(h, m, s){
+  //#Happy Coding! ^_^
+  let secondsToMillisec = s * 1000;
+  let minutesToMillisec = m * 60000;
+  let hoursToMillisec = h * 3600000;
+  
+  return secondsToMillisec + minutesToMillisec + hoursToMillisec;
+}
+console.log(past(h,m,s));
+
+
+
+
+
+
 
 
 // const points=games=>games.reduce((output,current)=>{
