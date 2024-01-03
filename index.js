@@ -438,7 +438,14 @@ console.log(find_average(arr2));
 // };
 // console.log(sum());
 
+// 31-masala Invert values
+// sonni teskarisini chiqarish
 
+function invert(array) {
+      return array.map(num => num * -1);
+}
+
+console.log(invert(15));
 
 
 
