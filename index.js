@@ -401,6 +401,8 @@ let find_average = (array) => {
 };
 console.log(find_average(arr2));
 
+
+
 // 29-masala
 // 1-usul
 
@@ -412,13 +414,34 @@ console.log(find_average(arr2));
 // }
 
 // 2-usul
-function betterThanAverage(classPoints, yourPoints) {
-  const classPointsSum = classPoints.reduce((a, b) => a + b, 0);
-  const classAverage = classPointsSum / classPoints.length;
-  const isBetter = yourPoints > classAverage;
-  return isBetter;
-}
-console.log(betterThanAverage());
+// function betterThanAverage(classPoints, yourPoints) {
+//   const classPointsSum = classPoints.reduce((a, b) => a + b, 0);
+//   const classAverage = classPointsSum / classPoints.length;
+//   const isBetter = yourPoints > classAverage;
+//   return isBetter;
+// }
+// console.log(betterThanAverage());
+
+// 30-masala Sum Arrays
+// 1-usul
+
+// function sum(numbers) {
+//   return numbers.reduce((a, b) => a + b, 0);
+// }
+// 2-usul
+// Sum Numbers
+// sum = function (numbers) {
+//   "use strict";
+//   return numbers.reduce(function(t, n){
+//     return t + n;
+//   }, 0);
+// };
+// console.log(sum());
+
+
+
+
+
 
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
