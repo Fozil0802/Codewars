@@ -441,11 +441,20 @@ console.log(find_average(arr2));
 // 31-masala Invert values
 // sonni teskarisini chiqarish
 
-function invert(array) {
-      return array.map(num => num * -1);
-}
+// function invert(array) {
+//       return array.map(num => num * -1);
+// }
 
-console.log(invert(15));
+// console.log(invert(15));
+
+// 32-masala //Simple multiplication
+
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number * 8 : number * 9
+}
+ console.log(simpleMultiplication(2));
+
+
 
 
 
