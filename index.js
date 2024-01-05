@@ -96,8 +96,8 @@ console.log(removeChar(str1));
 let numbers = [1, 2, 3, 4];
 
 function squareSum(numbers) {
-  var result = 0;
-  for (var i = 0; i < numbers.length; i++) {
+  let result = 0;
+  for (let i = 0; i < numbers.length; i++) {
     result += numbers[i] ** 2;
   }
   return result;
@@ -469,7 +469,13 @@ function countPositivesSumNegatives(input) {
 }
 console.log(countPositivesSumNegatives(input));
 
+// 34-masala //You only need one - Beginner
 
+// function check(a, x) {
+//   // your code here
+//   return a.includes(x) ? true : false;
+// }
+// console.log(check());
 
 
 
