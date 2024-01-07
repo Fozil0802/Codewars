@@ -481,22 +481,42 @@ console.log(countPositivesSumNegatives(input));
 
 // 35-masala
 //1-usul
-function fakeBin(x){
-  // x = x.split('');
+// function fakeBin(x){
+//   // x = x.split('');
   
-  let toBinary = x => {
-    if (x < 5)
-      return 0;
-    else return 1
+//   let toBinary = x => {
+//     if (x < 5)
+//       return 0;
+//     else return 1
+//   }
+  
+//   return x.map(toBinary).join('');
+// }
+// console.log(fakeBin());
+// // 2-usul
+// function fakeBin(x) {
+//   return x.split('').map(n => n < 5 ? 0 : 1).join('');
+// }
+
+// 36-masala
+
+function bmi(weight, height) {
+
+  let bmi = weight/height**2
+  if (bmi <= 18.5) {
+
+    return "Underweight";
+  } else if (bmi <= 25.0) {
+
+    return "Normal"
+  } else if (bmi <= 30.0) {
+
+    return "Overweight"
+  } else if (bmi > 30) {
+    return "Obese"
   }
-  
-  return x.map(toBinary).join('');
 }
-console.log(fakeBin());
-// 2-usul
-function fakeBin(x) {
-  return x.split('').map(n => n < 5 ? 0 : 1).join('');
-}
+console.log(bmi(5,20));
 
 
 // const points=games=>games.reduce((output,current)=>{
