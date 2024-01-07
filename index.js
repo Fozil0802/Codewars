@@ -469,6 +469,8 @@ function countPositivesSumNegatives(input) {
 }
 console.log(countPositivesSumNegatives(input));
 
+
+
 // 34-masala //You only need one - Beginner
 
 // function check(a, x) {
@@ -477,7 +479,24 @@ console.log(countPositivesSumNegatives(input));
 // }
 // console.log(check());
 
-
+// 35-masala
+//1-usul
+function fakeBin(x){
+  // x = x.split('');
+  
+  let toBinary = x => {
+    if (x < 5)
+      return 0;
+    else return 1
+  }
+  
+  return x.map(toBinary).join('');
+}
+console.log(fakeBin());
+// 2-usul
+function fakeBin(x) {
+  return x.split('').map(n => n < 5 ? 0 : 1).join('');
+}
 
 
 // const points=games=>games.reduce((output,current)=>{
