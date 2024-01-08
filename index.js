@@ -518,6 +518,17 @@ function bmi(weight, height) {
 }
 console.log(bmi(5,20));
 
+// 37-masala
+
+function grow(x){
+  let num = 1;
+  for (let i = 0; i < x.length; i++) {
+    num *= x[i];
+  }
+  return num;
+}
+console.log(grow([1,2,3]));
+
 
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
