@@ -529,6 +529,16 @@ function grow(x){
 }
 console.log(grow([1,2,3]));
 
+// 36-masala //MakeUpperCase
+
+function makeUpperCase(str) {
+  // Code here
+return  str.toUpperCase()
+
+}
+console.log(makeUpperCase('fozil'));
+
+
 
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
