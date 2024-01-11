@@ -538,6 +538,18 @@ return  str.toUpperCase()
 }
 console.log(makeUpperCase('fozil'));
 
+// 37-masala //Reversed sequence
+
+const reverseSeq = n => {
+  if (n < 1) {
+    return [];
+  } else {
+    const curArray = [n];
+    const recursed = reverseSeq(n - 1);
+    return curArray.concat(recursed);
+  }
+}
+console.log(reverseSeq(7));
 
 
 // const points=games=>games.reduce((output,current)=>{
