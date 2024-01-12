@@ -551,6 +551,24 @@ const reverseSeq = n => {
 }
 console.log(reverseSeq(7));
 
+// 38-masala // Is he gonna survive?
+
+// function hero(bullets, dragons){
+// //Get Coding!
+//    return bullets >= (2 * dragons);
+  
+// }
+
+function hero(bullets, dragons){
+//Get Coding!
+   return bullets = 2 * dragons? true: false;
+  
+}
+
+console.log(hero(10, 10));
+
+
+
 
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
