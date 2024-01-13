@@ -581,6 +581,24 @@ function smash (words){
 
 console.log(smash(['fozil', 'shavkatovich']));
 
+// 40-masala // Will you make it?
+
+// 1-masala
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+    let ourDistance = mpg * fuelLeft
+  if(ourDistance >= distanceToPump){
+   return true;
+  }else{
+   return false
+}
+};
+// 2-masala
+const zeroFuell = (distanceToPump, mpg, fuelLeft) => {
+  return (mpg * fuelLeft) >= distanceToPump;
+};
+console.log(zeroFuell(50, 25, 2));
+
 
 
 
