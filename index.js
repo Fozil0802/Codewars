@@ -567,6 +567,20 @@ function hero(bullets, dragons){
 
 console.log(hero(10, 10));
 
+// 39-masala // Sentence Smash
+
+
+function smash (words){
+  if (words.length===0){
+    return ""
+  } else {
+    return words.join(" ")
+  }
+}
+
+
+console.log(smash(['fozil', 'shavkatovich']));
+
 
 
 
