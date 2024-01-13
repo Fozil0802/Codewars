@@ -599,6 +599,24 @@ const zeroFuell = (distanceToPump, mpg, fuelLeft) => {
 };
 console.log(zeroFuell(50, 25, 2));
 
+// 41-masala
+
+// 1-usul
+// function countBy(x, n) {
+
+//  return [...Array(n)].map((_, i) => x * ++i);
+
+// }
+// 2-usul
+function countBy(x, n) {
+    var z = [];
+    for (i = 1; i <= n; i++) {
+        z.push(x * i);
+    }
+    return z;
+}
+console.log(countBy(3,15));
+
 
 
 
