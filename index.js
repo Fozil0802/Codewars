@@ -607,7 +607,8 @@ console.log(zeroFuell(50, 25, 2));
 //  return [...Array(n)].map((_, i) => x * ++i);
 
 // }
-// 2-usul
+// 2-usul //Count by X
+
 function countBy(x, n) {
     var z = [];
     for (i = 1; i <= n; i++) {
@@ -616,6 +617,24 @@ function countBy(x, n) {
     return z;
 }
 console.log(countBy(3,15));
+
+// 42-masala //DNA to RNA Conversion
+
+function DNAtoRNA(dna) {
+  // create a function which returns an RNA sequence from the given DNA sequence
+    let array = ""
+  for (let i = 0 ; i < dna.length ; i++){
+    if(dna[i] == "T"){
+      array += "U"
+    } else{
+      array += dna[i]
+    }
+  }
+  return array
+}
+console.log(DNAtoRNA('TFOZILT'));
+
+
 
 
 
