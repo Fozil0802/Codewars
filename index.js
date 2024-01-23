@@ -634,6 +634,16 @@ function DNAtoRNA(dna) {
 }
 console.log(DNAtoRNA('TFOZILT'));
 
+// 43-masala // If you can't sleep, just count sheep!!
+
+var countSheep = function (num){
+  //your code here
+     let str = "";
+  for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+  return str;
+}
+console.log(countSheep());
+
 
 
 
