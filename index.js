@@ -632,7 +632,9 @@ function DNAtoRNA(dna) {
   }
   return array
 }
+
 console.log(DNAtoRNA('TFOZILT'));
+
 
 // 43-masala // If you can't sleep, just count sheep!!
 
@@ -642,10 +644,27 @@ var countSheep = function (num){
   for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
   return str;
 }
+
 console.log(countSheep());
 
+// 44-masala // Grasshopper - Grade book
 
-
+function getGrade (s1, s2, s3) {
+  // Code here
+   var score = (s1 + s2 + s3) / 3;
+  if (score >= 90 && score <= 100) {
+      return 'A';
+  } else if (score >= 80 && score < 90) {
+    return 'B';
+  } else if (score >= 70&& score < 80) {
+    return 'C';
+  } else if (score >= 60  && score < 70) {
+    return 'D';
+  } else {
+    return 'F';
+  }
+}
+console.log(getGrade(50,90,70));
 
 
 
