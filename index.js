@@ -666,6 +666,30 @@ function getGrade (s1, s2, s3) {
 }
 console.log(getGrade(50,90,70));
 
+// 45-masala //Sum without highest and lowest number
+
+function sumArray(array) {
+if (array == null){
+    return 0;
+  }
+  else if (array.lenght < 3){
+    return 0;
+  }
+  else{
+    array.sort(function(a,b){
+      return a - b;
+    });
+    array.pop();
+    array.shift();
+    let sum = 0;
+    for(i=0;i<array.length;i++){
+      sum += array[i];
+    }
+    return sum;
+  }
+}
+console.log(sumArray([ -6, 20, -1, 10, -12 ]));
+
 
 
 // const points=games=>games.reduce((output,current)=>{
