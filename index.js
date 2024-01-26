@@ -690,6 +690,22 @@ if (array == null){
 }
 console.log(sumArray([ -6, 20, -1, 10, -12 ]));
 
+// 46-masala //Area or Perimeter
+//1-usul
+const areaOrPerimeter1 = function(l , w) {
+  return l == w ? l*w : 2*(l + w)
+};
+
+//2-usul
+
+const areaOrPerimeter = function(l , w) {
+  if (l == w){
+          return l * w
+  }else{
+     return 2 * (l + w)
+  }
+  };
+
 
 
 // const points=games=>games.reduce((output,current)=>{
