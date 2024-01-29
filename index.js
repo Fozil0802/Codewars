@@ -706,6 +706,23 @@ const areaOrPerimeter = function(l , w) {
   }
   };
 
+  // 47-masala
+// 1-usul
+
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 	'Hello guest';
+}
+
+// 2-usul
+  function greet (name, owner) {
+    // Add code here
+      if (name == owner) {
+          return("Hello boss")
+      }
+      else {
+          return("Hello guest")
+      }
+  }
 
 
 // const points=games=>games.reduce((output,current)=>{
