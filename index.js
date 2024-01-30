@@ -706,7 +706,8 @@ const areaOrPerimeter = function(l , w) {
   }
   };
 
-  // 47-masala
+  // 47-masala // Grasshopper - Personalized Message
+
 // 1-usul
 
 function greet (name, owner) {
@@ -724,6 +725,24 @@ function greet (name, owner) {
       }
   }
 
+
+  // 48-masala //The Feast of Many Beasts
+// 1-usul
+function feast(beast, dish) {
+  return beast[0]===dish[0] && beast.slice(-1)===dish.slice(-1);
+}
+
+// 2-usul
+
+  function feast(beast, dish) {
+//your function here
+  const b1 = beast[0];
+  const b2 = beast[beast.length - 1];
+  const d1 = dish[0];
+  const d2 = dish[dish.length - 1];
+  
+  return b1 === d1 && b2 === d2 ? true : false;
+}
 
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
