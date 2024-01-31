@@ -744,6 +744,25 @@ function feast(beast, dish) {
   return b1 === d1 && b2 === d2 ? true : false;
 }
 
+// 49-masala // Count the Monkeys!
+
+// 1-usul
+function monkeyCount(n) {
+  return Array.from({length:n}, (_,i)=>i+1)
+}
+
+// 2-usul
+
+function monkeyCount(n) {
+// your code here
+   var monkey = [];
+  for (i = 1; i <= n; i++) {
+    monkey.push(i);
+  }
+  return monkey
+}
+
+
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
