@@ -762,7 +762,20 @@ function monkeyCount(n) {
   return monkey
 }
 
+// 50-masala // Thinkful - Logic Drills: Traffic light
 
+
+function updateLight(current) {
+  
+  //your code here!
+   var colors = ["green","yellow","red"];
+  if( colors.indexOf(current) == 2){
+    return colors[0];
+  } else {
+    return colors[colors.indexOf(current)+1];
+  }
+
+}
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
