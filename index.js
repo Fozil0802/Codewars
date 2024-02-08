@@ -777,7 +777,7 @@ function updateLight(current) {
 
 }
 
-// 51-masala
+// 51-masala //Set Alarm
 
 // 1-usul
 
@@ -793,6 +793,27 @@ function setAlarm(employed, vacation){
 }
 
 console.log(setAlarm());
+
+//53-masala// Do I get a bonus?
+
+// 1-usul
+
+function bonusTime(salary, bonus) {
+// your code here
+return `£${bonus? salary * 10 : salary}`;
+}
+
+// 2-usul
+
+function bonusTime(salary, bonus) 
+{
+  if(bonus)
+  {
+    return "£" + (salary*10).toString();
+  }
+  return "£" + salary.toString();
+}
+console.log(bonusTime());
 // const points=games=>games.reduce((output,current)=>{
 //     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
