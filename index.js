@@ -861,8 +861,28 @@ function getPlanetName(id){
     8: 'Neptune'
   }[id]
 }
+
+// 55-masala // Find the first non-consecutive number
+// 1-usul
+function firstNonConsecutive (arr) {
+  for (let i = 1; i < arr.length; i++) {
+        if (arr[i - 1] + 1 !== arr[i]) return arr[i];
+    }
+    return null;
+}
+
+// 2-usul
+
+function firstNonConsecutive (arr) {
+  let result = arr.find((val, index) => val !== index + arr[0]);
+
+  return (Number.isInteger(result)) ? result : null;
+}
+
+console.log(firstNonConsecutive());
+
 // const points=games=>games.reduce((output,current)=>{
-//     return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
+//  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
 
 // // function points(games) {
