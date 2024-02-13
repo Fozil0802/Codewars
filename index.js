@@ -881,6 +881,27 @@ function firstNonConsecutive (arr) {
 
 console.log(firstNonConsecutive());
 
+// 56-masala //Twice as old
+
+//1-usul
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+let twice = dadYearsOld - sonYearsOld * 2;
+return twice < 0 ? twice * (-1) : twice;
+}
+
+// 2-usul
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
+
+// 3-usul
+function twiceAsOld(a, b) {
+  return a>2*b ? a-2*b : 2*b-a;
+}
+
+console.log(twiceAsOld());
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
