@@ -805,15 +805,15 @@ return `£${bonus? salary * 10 : salary}`;
 
 // 2-usul
 
-function bonusTime(salary, bonus) 
-{
-  if(bonus)
-  {
-    return "£" + (salary*10).toString();
-  }
-  return "£" + salary.toString();
-}
-console.log(bonusTime());
+// function bonusTime(salary, bonus) 
+// {
+//   if(bonus)
+//   {
+//     return "£" + (salary*10).toString();
+//   }
+//   return "£" + salary.toString();
+// }
+// console.log(bonusTime());
 
 // 54-masala //Get Planet Name By ID
 // 1-ususl
@@ -873,13 +873,13 @@ function firstNonConsecutive (arr) {
 
 // 2-usul
 
-function firstNonConsecutive (arr) {
-  let result = arr.find((val, index) => val !== index + arr[0]);
+// function firstNonConsecutive (arr) {
+//   let result = arr.find((val, index) => val !== index + arr[0]);
 
-  return (Number.isInteger(result)) ? result : null;
-}
+//   return (Number.isInteger(result)) ? result : null;
+// }
 
-console.log(firstNonConsecutive());
+// console.log(firstNonConsecutive());
 
 // 56-masala //Twice as old
 
@@ -901,6 +901,28 @@ function twiceAsOld(a, b) {
 }
 
 console.log(twiceAsOld());
+
+// 57-masala //All Star Code Challenge #18
+
+//1-usul
+function strCount(str, letter){  
+  //code here
+   var letter_Count = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      letter_Count += 1;
+      }
+  }
+  return letter_Count;
+}
+
+// 2-usul
+function strCount(str, letter){  
+  return str.split('').filter(c => c == letter).length;
+}
+console.log(strCount("hello","l"));
 
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
