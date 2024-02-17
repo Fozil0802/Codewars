@@ -902,7 +902,7 @@ function twiceAsOld(a, b) {
 
 console.log(twiceAsOld());
 
-// 57-masala //All Star Code Challenge #18
+// 57-masala //  #18
 
 //1-usul
 function strCount(str, letter){  
@@ -924,6 +924,25 @@ function strCount(str, letter){
 }
 console.log(strCount("hello","l"));
 
+// 58-masala //Will there be enough space?
+
+// 1-usul
+function enough(cap, on, wait) {
+  // your code here
+  let total = on + wait;
+  if (total <= cap){
+      return 0;
+    }else{
+      return total - cap;
+    }
+}
+
+// 2-usul
+function enough(cap, on, wait) {
+  return Math.max(wait + on - cap, 0);
+}
+
+console.log(enough());
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
