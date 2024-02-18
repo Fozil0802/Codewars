@@ -943,6 +943,23 @@ function enough(cap, on, wait) {
 }
 
 console.log(enough());
+
+// 59-masala// Third Angle of a Triangle
+
+//1-usul
+function otherAngle(a,b){
+  return(180-a-b)
+}
+
+// 2-usul
+
+function otherAngle(a, b) {
+  if(a<0 || b<0) //ensure no negative angles
+    return 0;
+  if((a+b)>=180) //ensure 2 angles don't sum up to 180
+    return 0;
+  return 180 - a - b; //return missing angle
+}
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
