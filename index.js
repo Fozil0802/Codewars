@@ -960,10 +960,49 @@ function otherAngle(a, b) {
     return 0;
   return 180 - a - b; //return missing angle
 }
+
+// 60-masala //Beginner Series #4 Cockroach
+
+// 1-usul
+function cockroachSpeed(s) {
+  //Good Luck!
+return Math.floor(s * 27.7778);
+}
+
+// 2-usul
+function cockroachSpeed(s) {
+  const secsInHour = 3600;
+  const centimetersInKilometers = 100000;
+  
+  return Math.floor((s*centimetersInKilometers)/secsInHour);
+}
+
+// 61-masala //Quarter of the year
+
+// 1-usul
+
+const quarterOf = (month) => {
+  // Your code here
+    if (month <= 3) {
+  return 1
+  } else if (6 >= month && month > 3) {
+    return 2
+  } else if (9 >= month && month > 6) {
+    return 3
+  } else if (12 >= month && month > 9) {
+    return 4
+  }
+}
+
+// 2-usul
+function quarterOf(month) {
+  return Math.ceil(month / 3);
+}
+
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
-
 // // function points(games) {
 // //   return games.reduce((output,current)=>{
 // //     let x = parseInt(current[0]);
