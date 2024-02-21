@@ -999,7 +999,31 @@ function quarterOf(month) {
   return Math.ceil(month / 3);
 }
 
+// 62-masala //Volume of a Cuboid
+// 1-usul
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    // your code here
+    return length * width * height;
 
+  }
+}
+// 2-usul
+var Kata = (() => {
+  this.getVolumeOfCuboid = (l, w, h) => l * w * h;
+  return this;
+})();
+
+// 63-masala //Remove exclamation marks
+
+// 1-usul
+function removeExclamatonMarks(s){
+  return s.split('!').join('');
+}
+// 2-usul
+function removeExclamationMarks(s) {
+  return s.replace(/!/g, '');
+}
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
