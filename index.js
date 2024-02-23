@@ -1024,6 +1024,24 @@ function removeExclamatonMarks(s){
 function removeExclamationMarks(s) {
   return s.replace(/!/g, '');
 }
+
+// 64-masala //Grasshopper - Check for factor
+// 1-usul
+
+function checkForFactor (base, factor) {
+  if (Number.isInteger(base / factor)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+    // 2-usul
+
+    function checkForFactor (base, factor) {
+  return !(base%factor);
+}
+console.log(checkForFactor());
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
