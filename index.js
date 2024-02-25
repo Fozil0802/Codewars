@@ -248,8 +248,7 @@ isDivisible(12,7,5)--> false because 12 is neither divisible by 7 nor 5*/
 
 function isDivisible(n, x, y) {
   return n % x == 0 && n % y == 0 ? true : false;
-}
-console.log(isDivisible(num1));
+} 
 
 // 21-masala
 let name = "Fozil";
@@ -1042,6 +1041,26 @@ function checkForFactor (base, factor) {
   return !(base%factor);
 }
 console.log(checkForFactor());
+
+// 65-masala //Correct the mistakes of the character recognition software
+// 1-usul
+function correct(string)
+{
+	// your code here
+  	return string.replace(/0/g, "O").replace(/1/g, "I").replace(/5/g, "S");
+}
+
+// 2-usul
+function correct(s){
+	s = s.split('');
+  for (var i = 0; i < s.length; i++) {
+    if (s[i] === '5') s[i] = 'S';
+    else if (s[i] === '0') s[i] = 'O';
+    else if (s[i] === '1') s[i] = 'I';
+    }
+  return s.join('');
+}
+console.log(correct());
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
