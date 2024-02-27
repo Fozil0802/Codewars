@@ -1084,7 +1084,45 @@ function switchItUp(number) {
     case 9: return 'Nine';
   }
 }
+
 console.log(switchItUp());
+
+// 67-masala //Parse nice int from char problem
+
+// 1-usul
+function getAge(inputString){
+  // return the girl's correct age as an integer. Happy coding :) 
+     return parseInt(inputString);
+    //  return +inputString[0];
+  }
+  // 2-usul
+  function getAge(inputString){
+    switch(inputString){
+      case "1 years old":
+        return 1;
+      case "2 years old":
+        return 2;
+      case "3 years old":
+        return 3;
+      case "4 years old":
+        return 4;
+      case "5 years old":
+        return 5;
+      case "6 years old":
+        return 6;
+      case "7 years old":
+        return 7;
+      case "8 years old":
+        return 8;
+      case "9 years old":
+        return 9;
+      default:
+        return 1;
+    }
+  }
+
+  console.log(getAge());
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
