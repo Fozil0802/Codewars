@@ -248,7 +248,7 @@ isDivisible(12,7,5)--> false because 12 is neither divisible by 7 nor 5*/
 
 function isDivisible(n, x, y) {
   return n % x == 0 && n % y == 0 ? true : false;
-} 
+}
 
 // 21-masala
 let name = "Fozil";
@@ -400,8 +400,6 @@ let find_average = (array) => {
 };
 console.log(find_average(arr2));
 
-
-
 // 29-masala
 // 1-usul
 
@@ -449,26 +447,24 @@ console.log(find_average(arr2));
 // 32-masala //Simple multiplication
 
 function simpleMultiplication(number) {
-  return number % 2 === 0 ? number * 8 : number * 9
+  return number % 2 === 0 ? number * 8 : number * 9;
 }
- console.log(simpleMultiplication(2));
+console.log(simpleMultiplication(2));
 
 // 33-masala //Count of positives / sum of negatives
-let input =  [1, 2, 3, 4, 5, 6,20, 7, 8, 9, 10, -11, -12, -13, -14, -25]
+let input = [1, 2, 3, 4, 5, 6, 20, 7, 8, 9, 10, -11, -12, -13, -14, -25];
 function countPositivesSumNegatives(input) {
   // your code here
-    let positiveNums = 0;
-    let negativeNums = 0;
-    if (input === null || input.length === 0) {
-      return [];
-    } else {
-      input.forEach((num) => num > 0 ? positiveNums++ : negativeNums += num);
-    }
-    return [positiveNums , negativeNums];
+  let positiveNums = 0;
+  let negativeNums = 0;
+  if (input === null || input.length === 0) {
+    return [];
+  } else {
+    input.forEach((num) => (num > 0 ? positiveNums++ : (negativeNums += num)));
+  }
+  return [positiveNums, negativeNums];
 }
 console.log(countPositivesSumNegatives(input));
-
-
 
 // 34-masala //You only need one - Beginner
 
@@ -482,13 +478,13 @@ console.log(countPositivesSumNegatives(input));
 //1-usul
 // function fakeBin(x){
 //   // x = x.split('');
-  
+
 //   let toBinary = x => {
 //     if (x < 5)
 //       return 0;
 //     else return 1
 //   }
-  
+
 //   return x.map(toBinary).join('');
 // }
 // console.log(fakeBin());
@@ -500,46 +496,41 @@ console.log(countPositivesSumNegatives(input));
 // 36-masala
 
 function bmi(weight, height) {
-
-  let bmi = weight/height**2
+  let bmi = weight / height ** 2;
   if (bmi <= 18.5) {
-
     return "Underweight";
   } else if (bmi <= 25.0) {
-
-    return "Normal"
+    return "Normal";
   } else if (bmi <= 30.0) {
-
-    return "Overweight"
+    return "Overweight";
   } else if (bmi > 30) {
-    return "Obese"
+    return "Obese";
   }
 }
-console.log(bmi(5,20));
+console.log(bmi(5, 20));
 
 // 37-masala
 
-function grow(x){
+function grow(x) {
   let num = 1;
   for (let i = 0; i < x.length; i++) {
     num *= x[i];
   }
   return num;
 }
-console.log(grow([1,2,3]));
+console.log(grow([1, 2, 3]));
 
 // 36-masala //MakeUpperCase
 
 function makeUpperCase(str) {
   // Code here
-return  str.toUpperCase()
-
+  return str.toUpperCase();
 }
-console.log(makeUpperCase('fozil'));
+console.log(makeUpperCase("fozil"));
 
 // 37-masala //Reversed sequence
 
-const reverseSeq = n => {
+const reverseSeq = (n) => {
   if (n < 1) {
     return [];
   } else {
@@ -547,7 +538,7 @@ const reverseSeq = n => {
     const recursed = reverseSeq(n - 1);
     return curArray.concat(recursed);
   }
-}
+};
 console.log(reverseSeq(7));
 
 // 38-masala // Is he gonna survive?
@@ -555,46 +546,43 @@ console.log(reverseSeq(7));
 // function hero(bullets, dragons){
 // //Get Coding!
 //    return bullets >= (2 * dragons);
-  
+
 // }
 
-function hero(bullets, dragons){
-//Get Coding!
-   return bullets = 2 * dragons? true: false;
-  
+function hero(bullets, dragons) {
+  //Get Coding!
+  return (bullets = 2 * dragons ? true : false);
 }
 
 console.log(hero(10, 10));
 
 // 39-masala // Sentence Smash
 
-
-function smash (words){
-  if (words.length===0){
-    return ""
+function smash(words) {
+  if (words.length === 0) {
+    return "";
   } else {
-    return words.join(" ")
+    return words.join(" ");
   }
 }
 
-
-console.log(smash(['fozil', 'shavkatovich']));
+console.log(smash(["fozil", "shavkatovich"]));
 
 // 40-masala // Will you make it?
 
 // 1-masala
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   // TODO
-    let ourDistance = mpg * fuelLeft
-  if(ourDistance >= distanceToPump){
-   return true;
-  }else{
-   return false
-}
+  let ourDistance = mpg * fuelLeft;
+  if (ourDistance >= distanceToPump) {
+    return true;
+  } else {
+    return false;
+  }
 };
 // 2-masala
 const zeroFuell = (distanceToPump, mpg, fuelLeft) => {
-  return (mpg * fuelLeft) >= distanceToPump;
+  return mpg * fuelLeft >= distanceToPump;
 };
 console.log(zeroFuell(50, 25, 2));
 
@@ -609,137 +597,134 @@ console.log(zeroFuell(50, 25, 2));
 // 2-usul //Count by X
 
 function countBy(x, n) {
-    var z = [];
-    for (i = 1; i <= n; i++) {
-        z.push(x * i);
-    }
-    return z;
+  var z = [];
+  for (i = 1; i <= n; i++) {
+    z.push(x * i);
+  }
+  return z;
 }
-console.log(countBy(3,15));
+console.log(countBy(3, 15));
 
 // 42-masala //DNA to RNA Conversion
 
 function DNAtoRNA(dna) {
   // create a function which returns an RNA sequence from the given DNA sequence
-    let array = ""
-  for (let i = 0 ; i < dna.length ; i++){
-    if(dna[i] == "T"){
-      array += "U"
-    } else{
-      array += dna[i]
+  let array = "";
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] == "T") {
+      array += "U";
+    } else {
+      array += dna[i];
     }
   }
-  return array
+  return array;
 }
 
-console.log(DNAtoRNA('TFOZILT'));
-
+console.log(DNAtoRNA("TFOZILT"));
 
 // 43-masala // If you can't sleep, just count sheep!!
 
-var countSheep = function (num){
+var countSheep = function (num) {
   //your code here
-     let str = "";
-  for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+  let str = "";
+  for (let i = 1; i <= num; i++) {
+    str += `${i} sheep...`;
+  }
   return str;
-}
+};
 
 console.log(countSheep());
 
 // 44-masala // Grasshopper - Grade book
 
-function getGrade (s1, s2, s3) {
+function getGrade(s1, s2, s3) {
   // Code here
-   var score = (s1 + s2 + s3) / 3;
+  var score = (s1 + s2 + s3) / 3;
   if (score >= 90 && score <= 100) {
-      return 'A';
+    return "A";
   } else if (score >= 80 && score < 90) {
-    return 'B';
-  } else if (score >= 70&& score < 80) {
-    return 'C';
-  } else if (score >= 60  && score < 70) {
-    return 'D';
+    return "B";
+  } else if (score >= 70 && score < 80) {
+    return "C";
+  } else if (score >= 60 && score < 70) {
+    return "D";
   } else {
-    return 'F';
+    return "F";
   }
 }
-console.log(getGrade(50,90,70));
+console.log(getGrade(50, 90, 70));
 
 // 45-masala //Sum without highest and lowest number
 
 function sumArray(array) {
-if (array == null){
+  if (array == null) {
     return 0;
-  }
-  else if (array.lenght < 3){
+  } else if (array.lenght < 3) {
     return 0;
-  }
-  else{
-    array.sort(function(a,b){
+  } else {
+    array.sort(function (a, b) {
       return a - b;
     });
     array.pop();
     array.shift();
     let sum = 0;
-    for(i=0;i<array.length;i++){
+    for (i = 0; i < array.length; i++) {
       sum += array[i];
     }
     return sum;
   }
 }
-console.log(sumArray([ -6, 20, -1, 10, -12 ]));
+console.log(sumArray([-6, 20, -1, 10, -12]));
 
 // 46-masala //Area or Perimeter
 //1-usul
-const areaOrPerimeter1 = function(l , w) {
-  return l == w ? l*w : 2*(l + w)
+const areaOrPerimeter1 = function (l, w) {
+  return l == w ? l * w : 2 * (l + w);
 };
 
 //2-usul
 
-const areaOrPerimeter = function(l , w) {
-  if (l == w){
-          return l * w
-  }else{
-     return 2 * (l + w)
+const areaOrPerimeter = function (l, w) {
+  if (l == w) {
+    return l * w;
+  } else {
+    return 2 * (l + w);
   }
-  };
+};
 
-  // 47-masala // Grasshopper - Personalized Message
+// 47-masala // Grasshopper - Personalized Message
 
 // 1-usul
 
-function greet (name, owner) {
-  return name === owner ? 'Hello boss' : 	'Hello guest';
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
 }
 
 // 2-usul
-  function greet (name, owner) {
-    // Add code here
-      if (name == owner) {
-          return("Hello boss")
-      }
-      else {
-          return("Hello guest")
-      }
+function greet(name, owner) {
+  // Add code here
+  if (name == owner) {
+    return "Hello boss";
+  } else {
+    return "Hello guest";
   }
+}
 
-
-  // 48-masala //The Feast of Many Beasts
+// 48-masala //The Feast of Many Beasts
 // 1-usul
 function feast(beast, dish) {
-  return beast[0]===dish[0] && beast.slice(-1)===dish.slice(-1);
+  return beast[0] === dish[0] && beast.slice(-1) === dish.slice(-1);
 }
 
 // 2-usul
 
-  function feast(beast, dish) {
-//your function here
+function feast(beast, dish) {
+  //your function here
   const b1 = beast[0];
   const b2 = beast[beast.length - 1];
   const d1 = dish[0];
   const d2 = dish[dish.length - 1];
-  
+
   return b1 === d1 && b2 === d2 ? true : false;
 }
 
@@ -747,48 +732,44 @@ function feast(beast, dish) {
 
 // 1-usul
 function monkeyCount(n) {
-  return Array.from({length:n}, (_,i)=>i+1)
+  return Array.from({ length: n }, (_, i) => i + 1);
 }
 
 // 2-usul
 
 function monkeyCount(n) {
-// your code here
-   var monkey = [];
+  // your code here
+  var monkey = [];
   for (i = 1; i <= n; i++) {
     monkey.push(i);
   }
-  return monkey
+  return monkey;
 }
 
 // 50-masala // Thinkful - Logic Drills: Traffic light
 
-
 function updateLight(current) {
-  
   //your code here!
-   var colors = ["green","yellow","red"];
-  if( colors.indexOf(current) == 2){
+  var colors = ["green", "yellow", "red"];
+  if (colors.indexOf(current) == 2) {
     return colors[0];
   } else {
-    return colors[colors.indexOf(current)+1];
+    return colors[colors.indexOf(current) + 1];
   }
-
 }
 
 // 51-masala //Set Alarm
 
 // 1-usul
 
-function setAlarm(employed, vacation){
-  return (employed && !vacation) ? true : false;
-
+function setAlarm(employed, vacation) {
+  return employed && !vacation ? true : false;
 }
 
 // 2-usul
 
-function setAlarm(employed, vacation){
-  return employed > vacation
+function setAlarm(employed, vacation) {
+  return employed > vacation;
 }
 
 console.log(setAlarm());
@@ -798,13 +779,13 @@ console.log(setAlarm());
 // 1-usul
 
 function bonusTime(salary, bonus) {
-// your code here
-return `£${bonus? salary * 10 : salary}`;
+  // your code here
+  return `£${bonus ? salary * 10 : salary}`;
 }
 
 // 2-usul
 
-// function bonusTime(salary, bonus) 
+// function bonusTime(salary, bonus)
 // {
 //   if(bonus)
 //   {
@@ -817,57 +798,57 @@ return `£${bonus? salary * 10 : salary}`;
 // 54-masala //Get Planet Name By ID
 // 1-ususl
 
-function getPlanetName(id){
+function getPlanetName(id) {
   var name;
-  switch(id){
+  switch (id) {
     case 1:
-      name = 'Mercury'
+      name = "Mercury";
       break;
     case 2:
-      name = 'Venus'
+      name = "Venus";
       break;
     case 3:
-      name = 'Earth'
+      name = "Earth";
       break;
     case 4:
-      name = 'Mars'
+      name = "Mars";
       break;
     case 5:
-      name = 'Jupiter'
+      name = "Jupiter";
       break;
     case 6:
-      name = 'Saturn'
+      name = "Saturn";
       break;
     case 7:
-      name = 'Uranus'
+      name = "Uranus";
       break;
     case 8:
-      name = 'Neptune'
+      name = "Neptune";
   }
-  
+
   return name;
 }
 // 2-usul
-function getPlanetName(id){
+function getPlanetName(id) {
   return {
-    1: 'Mercury',
-    2: 'Venus',
-    3: 'Earth',
-    4: 'Mars',
-    5: 'Jupiter',
-    6: 'Saturn',
-    7: 'Uranus',
-    8: 'Neptune'
-  }[id]
+    1: "Mercury",
+    2: "Venus",
+    3: "Earth",
+    4: "Mars",
+    5: "Jupiter",
+    6: "Saturn",
+    7: "Uranus",
+    8: "Neptune",
+  }[id];
 }
 
 // 55-masala // Find the first non-consecutive number
 // 1-usul
-function firstNonConsecutive (arr) {
+function firstNonConsecutive(arr) {
   for (let i = 1; i < arr.length; i++) {
-        if (arr[i - 1] + 1 !== arr[i]) return arr[i];
-    }
-    return null;
+    if (arr[i - 1] + 1 !== arr[i]) return arr[i];
+  }
+  return null;
 }
 
 // 2-usul
@@ -885,8 +866,8 @@ function firstNonConsecutive (arr) {
 //1-usul
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   // your code here
-let twice = dadYearsOld - sonYearsOld * 2;
-return twice < 0 ? twice * (-1) : twice;
+  let twice = dadYearsOld - sonYearsOld * 2;
+  return twice < 0 ? twice * -1 : twice;
 }
 
 // 2-usul
@@ -896,7 +877,7 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 
 // 3-usul
 function twiceAsOld(a, b) {
-  return a>2*b ? a-2*b : 2*b-a;
+  return a > 2 * b ? a - 2 * b : 2 * b - a;
 }
 
 console.log(twiceAsOld());
@@ -904,24 +885,22 @@ console.log(twiceAsOld());
 // 57-masala //  #18
 
 //1-usul
-function strCount(str, letter){  
+function strCount(str, letter) {
   //code here
-   var letter_Count = 0;
- for (var position = 0; position < str.length; position++) 
- {
-    if (str.charAt(position) == letter) 
-      {
+  var letter_Count = 0;
+  for (var position = 0; position < str.length; position++) {
+    if (str.charAt(position) == letter) {
       letter_Count += 1;
-      }
+    }
   }
   return letter_Count;
 }
 
 // 2-usul
-function strCount(str, letter){  
-  return str.split('').filter(c => c == letter).length;
+function strCount(str, letter) {
+  return str.split("").filter((c) => c == letter).length;
 }
-console.log(strCount("hello","l"));
+console.log(strCount("hello", "l"));
 
 // 58-masala //Will there be enough space?
 
@@ -929,11 +908,11 @@ console.log(strCount("hello","l"));
 function enough(cap, on, wait) {
   // your code here
   let total = on + wait;
-  if (total <= cap){
-      return 0;
-    }else{
-      return total - cap;
-    }
+  if (total <= cap) {
+    return 0;
+  } else {
+    return total - cap;
+  }
 }
 
 // 2-usul
@@ -946,16 +925,18 @@ console.log(enough());
 // 59-masala// Third Angle of a Triangle
 
 //1-usul
-function otherAngle(a,b){
-  return(180-a-b)
+function otherAngle(a, b) {
+  return 180 - a - b;
 }
 
 // 2-usul
 
 function otherAngle(a, b) {
-  if(a<0 || b<0) //ensure no negative angles
+  if (a < 0 || b < 0)
+    //ensure no negative angles
     return 0;
-  if((a+b)>=180) //ensure 2 angles don't sum up to 180
+  if (a + b >= 180)
+    //ensure 2 angles don't sum up to 180
     return 0;
   return 180 - a - b; //return missing angle
 }
@@ -965,15 +946,15 @@ function otherAngle(a, b) {
 // 1-usul
 function cockroachSpeed(s) {
   //Good Luck!
-return Math.floor(s * 27.7778);
+  return Math.floor(s * 27.7778);
 }
 
 // 2-usul
 function cockroachSpeed(s) {
   const secsInHour = 3600;
   const centimetersInKilometers = 100000;
-  
-  return Math.floor((s*centimetersInKilometers)/secsInHour);
+
+  return Math.floor((s * centimetersInKilometers) / secsInHour);
 }
 
 // 61-masala //Quarter of the year
@@ -982,16 +963,16 @@ function cockroachSpeed(s) {
 
 const quarterOf = (month) => {
   // Your code here
-    if (month <= 3) {
-  return 1
+  if (month <= 3) {
+    return 1;
   } else if (6 >= month && month > 3) {
-    return 2
+    return 2;
   } else if (9 >= month && month > 6) {
-    return 3
+    return 3;
   } else if (12 >= month && month > 9) {
-    return 4
+    return 4;
   }
-}
+};
 
 // 2-usul
 function quarterOf(month) {
@@ -1004,7 +985,6 @@ class Kata {
   static getVolumeOfCuboid(length, width, height) {
     // your code here
     return length * width * height;
-
   }
 }
 // 2-usul
@@ -1016,72 +996,93 @@ var Kata = (() => {
 // 63-masala //Remove exclamation marks
 
 // 1-usul
-function removeExclamatonMarks(s){
-  return s.split('!').join('');
+function removeExclamatonMarks(s) {
+  return s.split("!").join("");
 }
 // 2-usul
 function removeExclamationMarks(s) {
-  return s.replace(/!/g, '');
+  return s.replace(/!/g, "");
 }
 
 // 64-masala //Grasshopper - Check for factor
 // 1-usul
 
-function checkForFactor (base, factor) {
+function checkForFactor(base, factor) {
   if (Number.isInteger(base / factor)) {
-        return true;
-    } else {
-        return false;
-    }
+    return true;
+  } else {
+    return false;
+  }
 }
 
-    // 2-usul
+// 2-usul
 
-    function checkForFactor (base, factor) {
-  return !(base%factor);
+function checkForFactor(base, factor) {
+  return !(base % factor);
 }
 console.log(checkForFactor());
 
 // 65-masala //Correct the mistakes of the character recognition software
 // 1-usul
-function correct(string)
-{
-	// your code here
-  	return string.replace(/0/g, "O").replace(/1/g, "I").replace(/5/g, "S");
+function correct(string) {
+  // your code here
+  return string.replace(/0/g, "O").replace(/1/g, "I").replace(/5/g, "S");
 }
 
 // 2-usul
-function correct(s){
-	s = s.split('');
+function correct(s) {
+  s = s.split("");
   for (var i = 0; i < s.length; i++) {
-    if (s[i] === '5') s[i] = 'S';
-    else if (s[i] === '0') s[i] = 'O';
-    else if (s[i] === '1') s[i] = 'I';
-    }
-  return s.join('');
+    if (s[i] === "5") s[i] = "S";
+    else if (s[i] === "0") s[i] = "O";
+    else if (s[i] === "1") s[i] = "I";
+  }
+  return s.join("");
 }
 console.log(correct());
 
 // 66-masala // Switch it Up!
 
 // 1-usul
-function switchItUp(number){
-//Write your own Code!
-   return ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'][number];
+function switchItUp(number) {
+  //Write your own Code!
+  return [
+    "Zero",
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+    "Ten",
+  ][number];
 }
 // 2-usul
 function switchItUp(number) {
   switch (number) {
-    case 0: return 'Zero';
-    case 1: return 'One';
-    case 2: return 'Two';
-    case 3: return 'Three';
-    case 4: return 'Four';
-    case 5: return 'Five';
-    case 6: return 'Six';
-    case 7: return 'Seven';
-    case 8: return 'Eight';
-    case 9: return 'Nine';
+    case 0:
+      return "Zero";
+    case 1:
+      return "One";
+    case 2:
+      return "Two";
+    case 3:
+      return "Three";
+    case 4:
+      return "Four";
+    case 5:
+      return "Five";
+    case 6:
+      return "Six";
+    case 7:
+      return "Seven";
+    case 8:
+      return "Eight";
+    case 9:
+      return "Nine";
   }
 }
 
@@ -1090,38 +1091,63 @@ console.log(switchItUp());
 // 67-masala //Parse nice int from char problem
 
 // 1-usul
-function getAge(inputString){
-  // return the girl's correct age as an integer. Happy coding :) 
-     return parseInt(inputString);
-    //  return +inputString[0];
+function getAge(inputString) {
+  // return the girl's correct age as an integer. Happy coding :)
+  return parseInt(inputString);
+  //  return +inputString[0];
+}
+// 2-usul
+function getAge(inputString) {
+  switch (inputString) {
+    case "1 years old":
+      return 1;
+    case "2 years old":
+      return 2;
+    case "3 years old":
+      return 3;
+    case "4 years old":
+      return 4;
+    case "5 years old":
+      return 5;
+    case "6 years old":
+      return 6;
+    case "7 years old":
+      return 7;
+    case "8 years old":
+      return 8;
+    case "9 years old":
+      return 9;
+    default:
+      return 1;
   }
-  // 2-usul
-  function getAge(inputString){
-    switch(inputString){
-      case "1 years old":
-        return 1;
-      case "2 years old":
-        return 2;
-      case "3 years old":
-        return 3;
-      case "4 years old":
-        return 4;
-      case "5 years old":
-        return 5;
-      case "6 years old":
-        return 6;
-      case "7 years old":
-        return 7;
-      case "8 years old":
-        return 8;
-      case "9 years old":
-        return 9;
-      default:
-        return 1;
+}
+
+console.log(getAge());
+
+// 68-masala //Cat years, Dog years
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+  // Your code here!
+   let catYears = 0;
+  let dogYears = 0;
+  
+  for(let i = 1; i < humanYears.length; i++){
+    if (humanYears === 1) {
+      catYears = 15;
+      dogYears = 15;
+    } else if (humanYears === 2) {
+      catYears = 24;
+      dogYears = 24;
+    } else if (humanYears >= 3) {
+      catYears += 4;
+      dogYears += 5;
     }
   }
+  return [humanYears, catYears, dogYears];
 
-  console.log(getAge());
+}
+humanYearsCatYearsDogYears();
+
 
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
