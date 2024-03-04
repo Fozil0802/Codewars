@@ -1148,6 +1148,29 @@ var humanYearsCatYearsDogYears = function(humanYears) {
 }
 humanYearsCatYearsDogYears();
 
+// 69-masala //s it a palindrome?
+
+//1-usul
+function isPalindrome(x) {
+  // your code here
+   return x.toLowerCase() === x.split("").reverse().join("").toLowerCase();
+}
+//2-usul
+
+function isPalindrome(x) {
+  x = x.toLowerCase()
+  let a = 0
+  let b = x.length
+  while (a < b) {
+    if (x[a] != x[b-1])
+      return false
+    a++
+    b--
+  }
+  return true
+}
+
+isPalindrome();
 
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
