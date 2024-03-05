@@ -1148,7 +1148,7 @@ var humanYearsCatYearsDogYears = function(humanYears) {
 }
 humanYearsCatYearsDogYears();
 
-// 69-masala //s it a palindrome?
+// 69-masala //is it a palindrome?
 
 //1-usul
 function isPalindrome(x) {
@@ -1171,6 +1171,26 @@ function isPalindrome(x) {
 }
 
 isPalindrome();
+// 70-masal//Is it even?
+// 1-usul
+function testEven(n) {
+    //Your awesome code here!
+  return n % 2 === 0;
+}
+//2-usul
+function testEven(n) {
+  if (!Number.isInteger(n)) {
+    return false;
+  }
+
+  if (Number.isInteger(n / 2)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+testEven();
 
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
