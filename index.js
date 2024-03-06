@@ -1192,6 +1192,29 @@ function testEven(n) {
 
 testEven();
 
+// 71-masala // altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+//1-usul
+String.prototype.toAlternatingCase = function () {
+  // Define your method here :)
+  return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('');
+}
+
+// 2-usul
+String.prototype.toAlternatingCase = function () {
+  new_str = "";
+  for(var i = 0; i < this.length; i++) {
+    if(this[i] === this[i].toUpperCase()) {
+      new_str += this[i].toLowerCase();
+    }
+    else {
+      new_str += this[i].toUpperCase();
+    }
+  }
+  return new_str;
+}
+toAlternatingCase();
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
