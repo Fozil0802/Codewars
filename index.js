@@ -1215,6 +1215,23 @@ String.prototype.toAlternatingCase = function () {
 }
 toAlternatingCase();
 
+// 72-masala //Keep up the hoop
+
+// 1-usul
+
+function hoopCount (n) {
+   //your code goes here  
+  return ( n < 10 ) ? 'Keep at it until you get it' : 'Great, now move on to tricks';
+}
+
+// 2-usul
+
+function hoopCount (n) {
+   const hoops_limit = 10
+   return n >= hoops_limit
+     ? 'Great, now move on to tricks'
+     : 'Keep at it until you get it';
+}
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
