@@ -1232,6 +1232,26 @@ function hoopCount (n) {
      ? 'Great, now move on to tricks'
      : 'Keep at it until you get it';
 }
+
+// 73-masala//Find numbers which are divisible by given number
+
+// 1-usul
+function divisibleBy(numbers, divisor){
+  return numbers.filter(n => !(n % divisor));
+  }
+  // 2-usul
+
+  function divisibleBy(numbers, divisor) {
+    var newArr = [];
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] % divisor === 0) {
+        newArr.push(numbers[i]);
+      } 
+    }
+  return newArr;
+  }
+  divisibleBy();
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
