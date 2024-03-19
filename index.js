@@ -1252,6 +1252,46 @@ function divisibleBy(numbers, divisor){
   }
   divisibleBy();
 
+  // 74-masala //Powers of 2
+
+  // 1-usul
+  function powersOfTwo(n){
+    var myArray = [];
+    for (var i=0; i<=n; i++){
+      myArray.push(2**i);
+    }
+    return myArray
+  }
+
+  // 2-usul
+
+function powersOfTwo(n) {
+  return Array.from({length: n + 1}, (v, k) => 2 ** k);
+}
+
+powersOfTwo();
+
+// 75-masala //What is between
+// 1-usul
+function between(a, b) {
+  // your code here
+   return Array(b - a + 1).fill().map((_, idx) => a + idx)
+}
+
+// 2-usul
+
+function between(a, b) {
+  // your code here
+  arr = []
+  for(i = a;i <= b; i++){ 
+      arr.push(i)
+  }
+  return arr
+}
+between();
+
+
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
