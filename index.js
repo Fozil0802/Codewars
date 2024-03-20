@@ -1290,6 +1290,48 @@ function between(a, b) {
 }
 between();
 
+// 76-masala // I love you, a little , a lot, passionately ... not at all
+
+//1-usul
+
+function howMuchILoveYou(nbPetals) {
+  // your code
+ if(nbPetals%6 == 1){
+  return ("I love you");
+}else if(nbPetals%6 == 2){
+  return ("a little");
+}else if(nbPetals%6 ==3){
+  return ("a lot");
+}else if(nbPetals%6 ==4){
+  return ("passionately");
+}else if(nbPetals%6 == 5){
+  return ("madly");
+}else{
+  return ("not at all");
+}
+}
+
+//2-usul
+
+function howMuchILoveYou(nbPetals) {
+  switch ((nbPetals - 1) % 6) {
+      case 1:
+          return "a little";
+      case 2:
+          return "a lot";
+      case 3:
+          return "passionately";
+      case 4:
+          return "madly";
+      case 5:
+          return "not at all";
+      default:
+          return "I love you";
+  }
+}
+
+howMuchILoveYou();
+
 
 
 // const points=games=>games.reduce((output,current)=>{
