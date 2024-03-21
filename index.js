@@ -1332,6 +1332,16 @@ function howMuchILoveYou(nbPetals) {
 
 howMuchILoveYou();
 
+// 77-masala // Difference of Volumes of Cuboids
+
+function findDifference(a, b) {
+  //loading...
+  return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b))
+}
+
+
+
+
 
 
 // const points=games=>games.reduce((output,current)=>{
