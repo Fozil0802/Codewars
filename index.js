@@ -1339,8 +1339,35 @@ function findDifference(a, b) {
   return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b))
 }
 
+// 78-masala // Student's Final Grade
 
+// 1-usul
 
+function finalGrade (exam, projects) {
+  // final grade
+    if (exam > 90 || projects > 10) {
+     return 100;
+   } else if (exam > 75 && projects >= 5) {
+     return 90;
+   } else if (exam > 50 && projects >= 2) {
+     return 75;
+   } else {
+     return 0;
+   }
+ }
+
+//  2-usul
+
+function finalGrade (exam, projects) {
+  switch (true) {
+    case exam > 90 || projects > 10: return 100;
+    case exam > 75 && projects >= 5: return 90;
+    case exam > 50 && projects >= 2: return 75;
+    default: return 0;
+  }
+}
+
+finalGrade();
 
 
 
