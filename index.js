@@ -1369,8 +1369,34 @@ function finalGrade (exam, projects) {
 
 finalGrade();
 
+// 79-masala //Sort and Star
 
+// 1-usul
 
+function twoSort(s) {
+  return s
+      // sort alphabetically
+      .sort()
+      // remove first string
+      .shift()
+      // split string into individual strings
+      .split('')
+      // rejoin individual strings with '***' between them
+      .join('***')
+  }
+
+  // 2-usul
+
+  function twoSort(s) {
+    var last = s.sort()[0];
+    var a = last[0];
+    for(var i = 1; i < last.length; i++) {
+      a += "***" + last[i];
+    }
+    return a;
+  }
+
+  twoSort();
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
