@@ -1397,6 +1397,31 @@ function twoSort(s) {
   }
 
   twoSort();
+
+  // 80-masala //To square(root) or not to square(root)
+
+  // 1-usul
+
+  function squareOrSquareRoot(array) { 
+    var newValues = []; 
+      for(var i = 0 ; i<array.length ;i++) {
+          Number.isInteger(Math.sqrt(array[i]))?newValues.push(Math.sqrt(array[i])):newValues.push(array[i]*array[i]);
+      }
+      return newValues;
+  }
+
+  // 2-usul
+
+  function squareOrSquareRoot(array) {
+    return array.map(x => {
+      const r = Math.sqrt(x);
+      return (r % 1 == 0) ? r : (x*x);
+    });  
+  }
+
+  squareOrSquareRoot();
+
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
