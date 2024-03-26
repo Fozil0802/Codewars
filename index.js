@@ -1421,6 +1421,22 @@ function twoSort(s) {
 
   squareOrSquareRoot();
 
+  // 81-masala // Grasshopper - Terminal game move function
+
+  // 1-usul
+
+  function move (position, roll) {
+    return position + roll * 2
+  }
+
+// 2-usul
+
+function move (position, roll) {
+  // return the new position
+  return roll >= 1 && roll <= 6 ? roll * 2 + position : null;
+}
+
+move();
 
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
