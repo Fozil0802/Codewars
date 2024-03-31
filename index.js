@@ -1460,6 +1460,27 @@ function createArray(number){
 
 createArray();
 
+//83-masala //  Function 2 - squaring an argument
+
+// 1-usul
+
+// Write the "square"-function here
+
+const square = (n) => n * n;
+
+function square(x) {
+  return x ** 2;
+}
+
+// 2-usul
+
+function square(num){
+  var num = Math.pow(num, 2);
+  return num;
+};
+
+
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
