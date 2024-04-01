@@ -1499,7 +1499,35 @@ String.prototype.isUpperCase = function(){
   }
 }
 
+// 85-masala //Filter out the geese
 
+// 1-usul
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  
+  // return an array containing all of the strings in the input array except those that match strings in geese
+ 
+    return birds.filter(item=> !geese.includes(item))
+};
+
+// 2-usul
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  
+var newArray = [];
+  for (var i =0;i<birds.length;i++) {
+  if (!geese.includes(birds[i])) {
+    newArray.push(birds[i]);
+  }
+
+  
+  }
+return newArray;
+};
+
+gooseFilter();
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
