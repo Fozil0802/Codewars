@@ -1479,6 +1479,25 @@ function square(num){
   return num;
 };
 
+// 84-masala // Is the string uppercase?
+
+// 1-usul
+
+String.prototype.isUpperCase = function() {
+  // your code here
+  if (this == this.toUpperCase()){
+return true} else return false;
+  }
+
+// 2usul
+
+String.prototype.isUpperCase = function(){
+  if(this.toString() == this.toUpperCase()){
+    return true;
+  } else{
+    return false;
+  }
+}
 
 
 // const points=games=>games.reduce((output,current)=>{
