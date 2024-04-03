@@ -1560,6 +1560,47 @@ function stringy(size) {
 }
 
 stringy();
+
+// 87-masala // Expressions Matter
+
+// 1-usul
+
+function expressionMatter(a, b, c) {
+  // highest achievable result
+     return Math.max(
+     a + b + c,
+     a + b * c,
+     (a + b) * c,
+     a * b * c,
+     a * b + c,
+     a * (b + c),
+   );
+ }
+
+//  2-usul
+
+function expressionMatter(a, b, c) {
+  
+  if(a==1 && b==1 && c==1){
+    return 3;
+  }
+  
+  if(a!=1 && b!=1 && c!=1){
+    return a*b*c;
+  }
+  if(a==1 && b!=1 && c!=1){
+    return (a+b)*c
+  }
+   if(a!=1 && b!=1 && c==1){
+    return a*(b+c);
+  }
+ 
+  if(a!=1 && b==1 && c==1){
+    return a*2;
+  }
+}
+
+expressionMatter();
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
