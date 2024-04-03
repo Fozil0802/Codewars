@@ -1528,6 +1528,38 @@ return newArray;
 };
 
 gooseFilter();
+
+// 86-masala // Stringy Strings
+
+// 1-usul
+
+function stringy(size) {
+  // your code here 
+   var str = '';
+  
+  for (var i = 1; i <= size; i++) {
+  // loop by starting with 1 until you get to size number
+    str = str + i%2  
+  // if 1 is less than or equal to size, string = str + 1 % 2, which is 1  
+  // if 2 is less than or equal to size, string = str + 1 % 2, which is 0  
+  }
+  return str;
+}
+
+// 2-usul
+
+function stringy(size) {
+  string = "1";
+  for (var i = 0; i < size-1; i++) {
+    if(i % 2 == 0)
+      string += "0";
+    else
+      string += "1";
+  }
+  return string;
+}
+
+stringy();
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
