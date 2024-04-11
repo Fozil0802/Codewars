@@ -1601,6 +1601,44 @@ function expressionMatter(a, b, c) {
 }
 
 expressionMatter();
+
+// 88-masala // Find Multiples of a Number
+
+// 1-usul
+
+function findMultiples(integer, limit) {
+  //your code here
+  let arr=[];
+  if (integer < limit && integer > 0){
+    if(limit % integer === 0){
+      let tempResult = limit / integer;
+      for (let i=1; i < tempResult + 1; i++){
+        arr.push(i * integer);
+      }
+    } else if (limit % integer !== 0){
+      let calcRemainder = limit % integer;
+      let result = (limit - calcRemainder) / integer;
+      for (let i=1; i < result + 1; i++){
+        arr.push(i * integer);
+      }
+    }
+    console.log(arr)
+    } else {
+      console.log('invalid input')
+    }
+    return arr
+}
+
+// 2-usul
+
+function findMultiples(int,limit){
+  let multiples = [];
+  for(let i = int; i <= limit; i += int){ multiples.push(i); }
+  return multiples;
+}
+
+findMultiples();
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
