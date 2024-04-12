@@ -1639,6 +1639,27 @@ function findMultiples(int,limit){
 
 findMultiples();
 
+// 89-masala // My head is at the wrong end!
+
+// 1-usul
+
+function fixTheMeerkat(arr) {
+  //your code here
+    return arr.reverse();
+ }
+
+//  2-usul
+
+function fixTheMeerkat(arr) {
+  let tail = arr[0];
+  arr[0] = arr[2];
+  arr[2] = tail;
+  return arr;
+}
+
+
+
+
 // const points=games=>games.reduce((output,current)=>{
 //  return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
 //   },0)
